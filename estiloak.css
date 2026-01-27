@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    background-color: rgb(221, 221, 221);
+    height: 100%;
+}   
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #001747;
+    border-bottom: 4px solid #015aff;
+}
+
+#izenburua {
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    background-size: cover;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 4px solid #d60000;
+}
+
+#izenburua h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: #000000 2px 2px 4px;
+}
+
+#izenburua .game-stop {
+  display: flex;
+  gap: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  align-items: center;
+}
+
+#izenburua .game {
+    color: #ffffff;
+    text-shadow: #ffffff 2px 2px 4px;
+}
+
+#izenburua .stop {
+    color: #ff0000;
+    text-shadow: #ff0000 2px 2px 4px;
+}
+
+#izenburua img {
+    height: 80px;
+    width: auto;
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+main hr {
+    width: 80%;
+    border: 1.5px solid #be0000;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: black 1px 1px 2px;
+    margin-bottom: 20px;
+}
+
+.ig {
+    color: #d80000;
+}
+
+#containernagusia {
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    background-color: #000000;
+    border: 3px solid #be0000;
+    box-shadow: #ff0000 2px 2px 8px;
+    border-radius: 8px;
+}
+
+.nagusideskribapena {
+    margin-bottom: 22px;
+    margin-top: 25px;
+    text-align: left;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#containernagusia h3 {
+    margin: 0;
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: #ffffff 1px 1px 2px;
+}
+
+.berriak {
+    justify-content: center;
+    padding: 20px;
+    background-color: #d30101;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+}
+
+.berria {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    padding: 0; /* Quitamos padding para que la imagen llegue al borde si quieres */
+    display: flex; /* ACTIVAR FLEXBOX */
+    align-items: stretch; /* Para que la imagen y el texto midan lo mismo de alto */
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    border: black 3px solid;
+    border-radius: 8px;
+    box-shadow: #000000 2px 2px 8px;
+    overflow: hidden; /* Mantiene la imagen dentro de los bordes redondeados */
+    min-height: 240px; /* Altura mínima, pero puede crecer */
+}
+
+.berria div {
+    flex: 1; /* Hace que el texto use todo el espacio que no usa la imagen */
+    padding: 20px; /* Espacio interno para que el texto no toque los bordes */
+    text-align: left;
+}
+
+.berria:hover {
+    cursor: pointer;
+    box-shadow: black 4px 4px 16px;
+    border-color: #ff0000;
+}
+
+.berria h4 {
+    margin: 0;
+    padding: 20px 0 1px 0;
+    text-align: start;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.berria p {
+    margin: 0;
+    margin-top: 12px;
+    text-align: start;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.berria a {
+    color: #a80000;
+    text-align: start;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    float: left;
+}
+
+.berria a:hover {
+    color: #d80000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.berria .irudia {
+    position: static; /* Cambiado de absolute a static */
+    width: 40%; /* La imagen ocupará el 40% del ancho del contenedor */
+    max-width: 400px; /* Límite opcional */
+    height: auto; /* Se ajusta automáticamente */
+    object-fit: cover; 
+    border-left: 2px solid black; /* Opcional: una línea que separe el texto de la foto */
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b40000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #df0000;
+    box-shadow: #ff0000 1px 1px 2px;
+}
+
+.albistea {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+    width: 800px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.albistea h4 {
+    margin: 0;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.albistea p {
+    margin: 0;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.irudinagusia {
+    width: 800px;
+    height: auto;
+    margin: 20px;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+    box-shadow: #ce0000 2px 2px 8px;
+}
+
+#harpidetu {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+#harpidetu .followit {
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#harpidetu h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#harpidetu input[type="email"] {
+    padding: 8px;
+    width: 80%;
+    margin-top: 10px;
+    border: 2px solid #be0000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#harpidetu input[type="email"]:hover {
+    border-color: #000000;
+    box-shadow: #ff0000 1px 1px 2px;
+}
+
+#harpidetu button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b40000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#harpidetu button:hover {
+    background-color: #df0000;
+    box-shadow: #ff0000 1px 1px 2px;
+}
+
+
+/* footer h3 — Sare sozialen izenburua */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 4px solid #d60000;
+} 
+
+/* footer img — Sare sozialen ikonoak */
+footer h3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px; }
+    
+/* footer img:hover — Footer ikonoen hover efektua */
+footer img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    filter: grayscale(100%) brightness(100%);
+}
+
+/* #saresozialak p — Sare sozialen footer barruko paragrafoak */
+footer img:hover {
+    transform: scale(1.5);
+    transition: transform 0.7s;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(85%) saturate(7000%) hue-rotate(-10deg);
+}
+
+footer .marra {
+    color: red;
+}
+
+/* #saresozialak p — Sare sozialen footer barruko paragrafoak */
+#saresozialak p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline rgb(204, 0, 0);
+}
+
+#saresozialak p:hover {
+    color: #d80000;
+    cursor: pointer;
+    text-decoration: underline rgb(204, 0, 0);
+
+}
