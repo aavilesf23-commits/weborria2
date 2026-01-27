@@ -263,6 +263,63 @@ button:hover {
     box-shadow: #ce0000 2px 2px 8px;
 }
 
+#harpidetu {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+#harpidetu .followit {
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#harpidetu h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#harpidetu input[type="email"] {
+    padding: 8px;
+    width: 80%;
+    margin-top: 10px;
+    border: 2px solid #be0000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#harpidetu input[type="email"]:hover {
+    border-color: #000000;
+    box-shadow: #ff0000 1px 1px 2px;
+}
+
+#harpidetu button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b40000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#harpidetu button:hover {
+    background-color: #df0000;
+    box-shadow: #ff0000 1px 1px 2px;
+}
+
 
 /* footer h3 — Sare sozialen izenburua */
 footer {
