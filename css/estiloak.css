@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(221, 221, 221);
     height: 100%;
 }   
 
@@ -267,11 +267,16 @@ button:hover {
     margin-top: 30px;
     padding: 20px;
     background-color: #ffffff;
-    border: 4px solid #be0000;
+    border: 4px solid #c50000;
     border-radius: 8px;
     width: 800px;
     height: auto;
     text-align: center;
+}
+
+#harpidetu:hover {
+    box-shadow: #000000 2px 2px 8px;
+    border-color: #f50000;
 }
 
 #harpidetu .followit {
@@ -305,6 +310,7 @@ button:hover {
 
 #harpidetu button {
     margin-top: 15px;
+    margin-bottom: 15px;
     padding: 10px 20px;
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -318,6 +324,14 @@ button:hover {
 #harpidetu button:hover {
     background-color: #df0000;
     box-shadow: #ff0000 1px 1px 2px;
+}
+
+#harpidetu .poweredby {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 

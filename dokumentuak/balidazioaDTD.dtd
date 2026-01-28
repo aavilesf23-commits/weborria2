@@ -1,0 +1,38 @@
+<!ELEMENT langileak (langilea+)>
+
+<!ELEMENT langilea (
+    izena,
+    abizena,
+    emaila,
+    telefonoa,
+    data,
+    nagusia?,
+    lanpostua?,
+    erabiltzailea?,
+    pasahitza?
+)>
+<!ATTLIST langilea
+    id CDATA #REQUIRED
+    mota (bulegaria | saltzailea) #REQUIRED
+>
+
+<!ELEMENT izena (#PCDATA)>
+<!ELEMENT abizena (#PCDATA)>
+<!ELEMENT emaila (#PCDATA)>
+<!ELEMENT telefonoa (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+
+<!ELEMENT nagusia (izenAbizena)>
+<!ATTLIST nagusia
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT izenAbizena (#PCDATA)>
+
+<!ELEMENT lanpostua (#PCDATA)>
+<!ATTLIST lanpostua
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT erabiltzailea (#PCDATA)>
+<!ELEMENT pasahitza (#PCDATA)>

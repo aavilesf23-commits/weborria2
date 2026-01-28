@@ -1,47 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE langileak [
-    <!ELEMENT langileak (langilea+)>
-    <!ELEMENT langilea (izena, abizena, emaila, telefonoa, data, nagusia?, lanpostua?, erabiltzailea?, pasahitza?)>
-    <!ATTLIST langilea
-        id CDATA #REQUIRED
-        mota (bulegaria|saltzailea) #REQUIRED
-    >
-    <!ELEMENT izena (#PCDATA)>
-    <!ELEMENT abizena (#PCDATA)>
-    <!ELEMENT emaila (#PCDATA)>
-    <!ELEMENT telefonoa (#PCDATA)>
-    <!ELEMENT data (#PCDATA)>
-    <!ELEMENT nagusia (izenAbizena)>
-    <!ATTLIST nagusia id CDATA #REQUIRED>
-    <!ELEMENT izenAbizena (#PCDATA)>
-    <!ELEMENT lanpostua (#PCDATA)>
-    <!ATTLIST lanpostua id CDATA #REQUIRED>
-    <!ELEMENT erabiltzailea (#PCDATA)>
-    <!ELEMENT pasahitza (#PCDATA)>
-]>
 <langileak>
     <langilea id="12345678" mota="bulegaria">
         <izena>Ane</izena>
         <abizena>Garcia</abizena>
         <emaila>ane.garcia@example.com</emaila>
-        <telefonoa>9.43.555.111</telefonoa>
-        <data>2025-01-15</data>
+        <telefonoa>123.456.789</telefonoa>
+        <data>2024-05-10</data>
 
         <nagusia id="87654321">
-            <izenAbizena>Jon Etxeberria</izenAbizena>
+            <izenAbizena>Jon Lopez</izenAbizena>
         </nagusia>
 
         <lanpostua id="LP01">Administraria</lanpostua>
     </langilea>
 
     <langilea id="23456789" mota="saltzailea">
-        <izena>Iker</izena>
+        <izena>Jon</izena>
         <abizena>Lopez</abizena>
-        <emaila>iker.lopez@example.com</emaila>
-        <telefonoa>6.11.222.333</telefonoa>
-        <data>2024-11-03</data>
+        <emaila>jon.lopez@example.com</emaila>
+        <telefonoa>987.654.321</telefonoa>
+        <data>2023-11-01</data>
 
-        <erabiltzailea>ikerl</erabiltzailea>
+        <erabiltzailea>jlopez</erabiltzailea>
         <pasahitza>Secreta123</pasahitza>
     </langilea>
 </langileak>

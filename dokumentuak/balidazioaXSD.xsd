@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+    <!-- EMAIL PATRIOIA -->
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z.]+@example\.com"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- TELEFONO PATRIOIA -->
+    <xs:simpleType name="telefonoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9](\.)?[0-9.]*[0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- ID MOTA -->
+    <xs:simpleType name="idType">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:element name="langileak">
         <xs:complexType>
             <xs:sequence>
@@ -9,23 +30,8 @@
                         <xs:sequence>
                             <xs:element name="izena" type="xs:string"/>
                             <xs:element name="abizena" type="xs:string"/>
-
-                            <xs:element name="emaila">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="[A-Za-z\.]+@example\.com"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-
-                            <xs:element name="telefonoa">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:pattern value="[0-9][0-9\.]*[0-9]"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-
+                            <xs:element name="emaila" type="emailType"/>
+                            <xs:element name="telefonoa" type="telefonoType"/>
                             <xs:element name="data" type="xs:date"/>
 
                             <xs:element name="nagusia" minOccurs="0">
@@ -33,16 +39,11 @@
                                     <xs:sequence>
                                         <xs:element name="izenAbizena" type="xs:string"/>
                                     </xs:sequence>
-                                    <xs:attribute name="id" use="required">
-                                        <xs:simpleType>
-                                            <xs:restriction base="xs:integer">
-                                                <xs:totalDigits value="8"/>
-                                            </xs:restriction>
-                                        </xs:simpleType>
-                                    </xs:attribute>
+                                    <xs:attribute name="id" type="idType" use="required"/>
                                 </xs:complexType>
                             </xs:element>
 
+                            <!-- BULEGARIA -->
                             <xs:element name="lanpostua" minOccurs="0">
                                 <xs:complexType>
                                     <xs:simpleContent>
@@ -53,19 +54,13 @@
                                 </xs:complexType>
                             </xs:element>
 
+                            <!-- SALTZAILEA -->
                             <xs:element name="erabiltzailea" type="xs:string" minOccurs="0"/>
                             <xs:element name="pasahitza" type="xs:string" minOccurs="0"/>
 
                         </xs:sequence>
 
-                        <xs:attribute name="id" use="required">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:totalDigits value="8"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-
+                        <xs:attribute name="id" type="idType" use="required"/>
                         <xs:attribute name="mota" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
