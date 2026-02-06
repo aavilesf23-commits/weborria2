@@ -271,50 +271,80 @@ button:hover {
 footer {
     background-color: #000000;
     color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 80px 20px;
+    font-family: 'Verdana', sans-serif;
     border-top: 4px solid #d60000;
-} 
-
-/* footer img — Sare sozialen ikonoak */
-footer h3 {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px; }
-    
-/* footer img:hover — Footer ikonoen hover efektua */
-footer img {
-    width: 30px;
-    height: auto;
-    margin: 0 10px;
-    filter: grayscale(100%) brightness(100%);
 }
 
-/* #saresozialak p — Sare sozialen footer barruko paragrafoak */
-footer img:hover {
-    transform: scale(1.5);
-    transition: transform 0.7s;
-    filter: brightness(0) saturate(100%) invert(15%) sepia(85%) saturate(7000%) hue-rotate(-10deg);
+.footer-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
 }
 
-footer .marra {
-    color: red;
+.footer-left {
+    text-align: left;
 }
 
-/* #saresozialak p — Sare sozialen footer barruko paragrafoak */
-#saresozialak p {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    margin-top: 10px;
+.footer-left h4 {
+    color: #d60000;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.footer-divider {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, #d60000, transparent);
+}
+
+.footer-right-social {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.footer-right-social h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #fff;
     text-align: center;
-    text-decoration: underline rgb(204, 0, 0);
 }
 
-#saresozialak p:hover {
-    color: #d80000;
-    cursor: pointer;
-    text-decoration: underline rgb(204, 0, 0);
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
 
+.icon-size1, .icon-size2, .icon-size3, .icon-size4, .icon-size5 {
+    object-fit: contain;
+    filter: grayscale(1) brightness(1.2);
+    transition: all 0.3s ease;
+}
+
+.icon-size1 { width: 33px; height: 33px; }
+.icon-size2, .icon-size3 { width: 32px; height: 32px; }
+.icon-size4, .icon-size5 { width: 36px; height: 36px; }
+
+.icon-size1:hover { filter: invert(39%) sepia(93%) saturate(1352%) hue-rotate(193deg) brightness(97%) contrast(101%) drop-shadow(0 0 10px #003ec4c5); transform: scale(1.2); }
+.icon-size2:hover { filter: grayscale(0) brightness(1) drop-shadow(0 0 10px #d60000); transform: scale(1.2); }
+.icon-size3:hover { filter: invert(31%) sepia(94%) saturate(8156%) hue-rotate(323deg) brightness(95%) contrast(103%) drop-shadow(0 0 10px #ff32ffab); transform: scale(1.2); }
+.icon-size4:hover { filter: brightness(0) saturate(100%) invert(15%) sepia(85%) saturate(7000%) hue-rotate(-10deg) drop-shadow(0 0 5px #d60000); transform: scale(1.2); }
+.icon-size5:hover { filter: invert(15%) sepia(85%) saturate(7000%) hue-rotate(-10deg) brightness(1) drop-shadow(0 0 10px #ffd00083); transform: scale(1.2); }
+
+.map-link {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.map-link:hover {
+    color: #ffffff;
+    text-decoration: underline #d60000;
 }
