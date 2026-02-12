@@ -1,0 +1,27 @@
+<!ENTITY langile "izena, abizena, emaila, telefonoa, data, nagusia?"> <!-- Langile-ren elemntuak -->
+
+<!-- langileak/bulegariak/bulegari elemtuak + atributuak -->
+<!ELEMENT langileak (bulegariak+, saltzaileak+)>
+<!ELEMENT bulegariak (bulegari+)>
+<!ELEMENT bulegari (langile, lanpostu)>
+<!ATTLIST bulegari id ID #REQUIRED>
+
+<!-- Elemntuak -->
+<!ELEMENT izena (#PCDATA)>
+<!ELEMENT abizena (#PCDATA)>
+<!ELEMENT emaila (#PCDATA)>
+<!ELEMENT telefonoa (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT saltzaileak (saltzaile+)>
+<!ELEMENT saltzaile (langile, kontua)>
+<!ATTLIST saltzaile id ID #REQUIRED> <!-- Saltzaile elemntuak id atributua du, ID mota eta beharrezkoa da -->
+
+<!-- Kontua elementua eta bere barneko elementuak -->
+<!ELEMENT kontua (erabiltzailea, pasahitza)>
+<!ELEMENT erabiltzailea (#PCDATA)>
+<!ELEMENT pasahitza (#PCDATA)>
+<!ELEMENT nagusia (izena, abizena)>
+<!ELEMENT lanpostu (deskribapena)>
+<!ELEMENT deskribapena (#PCDATA)>
+
+<!ATTLIST nagusia id_nagusi IDREF #REQUIRED> <!-- Nagusia elementuak id_nagusi atributua du, IDREF mota eta beharrezkoa da -->

@@ -1,0 +1,393 @@
+/* Orokorrean orriaren estilo nagusia */
+body {
+    margin: 0; /* Nabigatzaileak lehenetsitako kanpo-marjina kentzen du */
+    background-color: rgb(221, 221, 221); /* Atzeko kolore gris argia */
+    height: 100%; /* Altura osoa hartzen du */
+}   
+
+/* Goiburua (header) */
+header {
+    display: flex; /* Elementuak lerro batean flex bidez kokatzen ditu */
+    justify-content: space-around; /* Elementuen artean espazio berdina uzten du */
+    height: 100px; /* Altuera finkoa */
+    background-color: #001747; /* Urdin iluna atzeko planoan */
+    border-bottom: 4px solid #015aff; /* Beheko ertz urdina */
+}
+
+/* Izenburu nagusiaren edukiontzia */
+#izenburua {
+    display: flex; /* Barruko elementuak flex bidez */
+    padding: 20px; /* Barruko tartea */
+    background-color: black; /* Atzeko plano beltza */
+    color: white; /* Testu kolore zuria */
+    background-size: cover; /* Atzeko irudia egokituko litzateke (balego) */
+    justify-content: baseline; /* Elementuak oinarri-lerroan lerrokatuta */
+    align-items: center; /* Bertikalki erdian */
+    gap: 20px; /* Elementuen arteko tartea */
+    border-bottom: 4px solid #d60000; /* Beheko ertz gorria */
+}
+
+/* Izenburu nagusiko h1 */
+#izenburua h1 {
+    margin: 0; /* Kanpo-marjina kenduta */
+    font-size: 40px; /* Letra handia */
+    font-weight: bold; /* Lodia */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Letra mota */
+    text-shadow: #000000 2px 2px 4px; /* Itzal beltza */
+}
+
+/* GAME-STOP testu zatia */
+#izenburua .game-stop {
+  display: flex; /* Flex bidez lerroan */
+  gap: 10px; /* Tartea hitzen artean */
+  font-size: 32px; /* Tamaina handia */
+  font-weight: bold; /* Lodia */
+  align-items: center; /* Bertikalki erdian */
+}
+
+/* GAME hitzaren estiloa */
+#izenburua .game {
+    color: #ffffff; /* Zuria */
+    text-shadow: #ffffff 2px 2px 4px; /* Itzal zuria */
+}
+
+/* STOP hitzaren estiloa */
+#izenburua .stop {
+    color: #ff0000; /* Gorria */
+    text-shadow: #ff0000 2px 2px 4px; /* Itzal gorria */
+}
+
+/* Izenburuko irudia */
+#izenburua img {
+    height: 80px; /* Altuera finkoa */
+    width: auto; /* Zabalera proportzionala */
+    border-radius: 8px; /* Ertz biribilduak */
+}
+
+/* Eduki nagusia */
+main {
+    display: flex; /* Flex diseinua */
+    flex-direction: column; /* Zutabe moduan */
+    justify-content: center; /* Bertikalki erdian */
+    align-items: center; /* Horizontalki erdian */
+    min-height: 100vh; /* Gutxieneko altuera: pantaila osoa */
+    margin-bottom: 50px; /* Beheko tartea */
+    padding: 20px 0; /* Goiko eta beheko barruko tartea */
+}
+
+/* main barruko marra horizontala */
+main hr {
+    width: 80%; /* Zabalera %80 */
+    border: 1.5px solid #be0000; /* Marra gorria */
+    margin-bottom: 20px; /* Beheko tartea */
+}
+
+/* main barruko h2 */
+main h2 {
+    margin: 0;
+    text-align: center; /* Erdian */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: black 1px 1px 2px;
+    margin-bottom: 20px;
+}
+
+/* Instagram edo kolore gorriko klasea */
+.ig {
+    color: #d80000;
+}
+
+/* Edukiontzi nagusia */
+#containernagusia {
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    background-color: #000000; /* Beltza */
+    border: 3px solid #be0000; /* Ertz gorria */
+    box-shadow: #ff0000 2px 2px 8px; /* Itzal gorria */
+    border-radius: 8px;
+}
+
+/* Deskribapen nagusia */
+.nagusideskribapena {
+    margin-bottom: 22px;
+    margin-top: 25px;
+    text-align: left;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255); /* Testu zuria */
+}
+
+/* h3 edukiontzi nagusian */
+#containernagusia h3 {
+    margin: 0;
+    text-align: start;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: #ffffff 1px 1px 2px;
+}
+
+/* Berriak atala */
+.berriak {
+    justify-content: center;
+    padding: 20px;
+    background-color: #d30101; /* Gorria */
+    border: 4px solid #be0000;
+    border-radius: 8px;
+}
+
+/* Berri bakoitza */
+.berria {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    padding: 0;
+    display: flex; /* Edukia eta irudia lerroan */
+    align-items: stretch; 
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    border: black 3px solid;
+    border-radius: 8px;
+    box-shadow: #000000 2px 2px 8px;
+    overflow: hidden; 
+    min-height: 240px; 
+}
+
+/* Berri barruko div-ak */
+.berria div {
+    flex: 1; /* Zabalera malgua */
+    padding: 20px; 
+    text-align: left;
+}
+
+/* Hover efektua berrian */
+.berria:hover {
+    cursor: pointer;
+    box-shadow: black 4px 4px 16px; /* Itzal handiagoa */
+    border-color: #ff0000; /* Ertz gorria */
+}
+
+/* Berri barruko h4 */
+.berria h4 {
+    margin: 0;
+    padding: 20px 0 1px 0;
+    text-align: start;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Berri barruko paragrafoa */
+.berria p {
+    margin: 0;
+    margin-top: 12px;
+    text-align: start;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Berri barruko esteka */
+.berria a {
+    color: #a80000;
+    text-align: start;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    float: left;
+}
+
+/* Hover efektua estekan */
+.berria a:hover {
+    color: #d80000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Berriaren irudia */
+.berria .irudia {
+    position: static;
+    width: 40%; 
+    max-width: 400px; 
+    height: auto;
+    object-fit: cover; 
+    border-left: 2px solid black;
+}
+
+/* Botoiak */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b40000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botoi barruko esteka */
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Botoi hover */
+button:hover {
+    background-color: #df0000;
+    box-shadow: #ff0000 1px 1px 2px;
+}
+
+/* Albiste osoaren orria */
+.albistea {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+    width: 800px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/* Albiste barruko h4 */
+.albistea h4 {
+    margin: 0;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/* Albiste barruko p */
+.albistea p {
+    margin: 0;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+/* Irudi nagusia */
+.irudinagusia {
+    width: 800px;
+    height: auto;
+    margin: 20px;
+    border: 4px solid #be0000;
+    border-radius: 8px;
+    box-shadow: #ce0000 2px 2px 8px;
+}
+
+/* Sare sozialak */
+#saresozialak {
+    margin: 10px 0;
+}
+
+/* Footer orokorra */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 80px 20px;
+    font-family: 'Verdana', sans-serif;
+    border-top: 4px solid #d60000;
+}
+
+/* Footer barruko egitura nagusia */
+.footer-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px; 
+}
+
+/* Ezkerreko zatia */
+.footer-left {
+    text-align: left;
+}
+
+/* Ezkerreko h4 */
+.footer-left h4 {
+    color: #d60000;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Banaketa marra bertikala */
+.footer-divider {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, #d60000, transparent);
+}
+
+/* Eskumako sare sozialak */
+.footer-right-social {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+/* Sare sozialen izenburua */
+.footer-right-social h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Ikonoen lerroa */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Ikono guztien oinarrizko estiloa */
+.icon-size1, .icon-size2, .icon-size3, .icon-size4, .icon-size5 {
+    object-fit: contain;
+    filter: grayscale(1) brightness(1.2);
+    transition: all 0.3s ease;
+}
+
+/* Tamaina desberdinak */
+.icon-size1 { width: 33px; height: 33px; }
+.icon-size2, .icon-size3 { width: 32px; height: 32px; }
+.icon-size4, .icon-size5 { width: 36px; height: 36px; }
+
+/* Hover efektu koloredunak */
+.icon-size1:hover { transform: scale(1.2); }
+.icon-size2:hover { transform: scale(1.2); }
+.icon-size3:hover { transform: scale(1.2); }
+.icon-size4:hover { transform: scale(1.2); }
+.icon-size5:hover { transform: scale(1.2); }
+
+/* Maparen esteka */
+.map-link {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* Hover efektua mapan */
+.map-link:hover {
+    color: #ffffff;
+    text-decoration: underline #d60000;
+}

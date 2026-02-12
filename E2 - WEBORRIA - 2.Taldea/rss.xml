@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML deklarazioa: bertsioa eta karaktere-kodifikazioa (UTF-8) -->
+<rss version="2.0">
+  <!-- RSS erro elementua, 2.0 bertsioa erabiltzen dela adierazten du -->
+
+  <channel>
+    <!-- Kanal nagusia: RSS feed-aren informazio orokorra hemen doa -->
+    <title>GameStop Esports Albisteak</title>
+    <!-- Feed-aren izenburua -->
+    <link>https://aavilesf23-commits.github.io/weborria2</link>
+    <!-- Webgune nagusiaren esteka -->
+    <description>GameStop-en esports eta bideojoko txapelketen inguruko azken berriak</description>
+    <!-- Kanalaren deskribapen laburra -->
+    <language>eu</language>
+    <!-- Hizkuntza kodea (eu = euskara) -->
+    <pubDate>Mon, 26 Jan 2026 10:00:00 GMT</pubDate>
+    <!-- Kanal osoaren argitalpen data (GMT formatuan) -->
+    <item>
+      <!-- Lehenengo albistea -->
+      <title>GameStop-ek bere Bigarren Bideojoko Txapelketa Globala iragarri du 2026rako</title>
+      <!-- Albistearen izenburua -->
+      <link>https://aavilesf23-commits.github.io/weborria2/orriak/berria1.html</link>
+      <!-- Albiste zehatz honen web orriaren esteka -->
+      <description>
+        <!-- Albistearen deskribapen edo laburpena -->
+        GameStop-ek ofizialki iragarri du Bigarren Bideojoko Txapelketa Globala 2026an
+        antolatuko duela. Ekitaldiak formatu hibridoa izango du, online sailkapenak
+        eta denda fisiko hautatuetan egingo diren finalekin. Txapelketa martxotik
+        maiatzera bitartean jokatuko da, eta final handia streaming bidez emitituko da.
+      </description>
+      <pubDate>Mon, 26 Jan 2026 09:00:00 GMT</pubDate>
+      <!-- Albiste honen argitalpen data -->
+    </item>
+
+    <item>
+      <!-- Bigarren albistea -->
+      <title>100.000 dolar baino gehiagoko sariak GameStop-en Esports Tour berrian</title>
+      <!-- Albistearen izenburua -->
+      <link>https://aavilesf23-commits.github.io/weborria2/orriak/berria2.html</link>
+      <!-- Albistearen esteka -->
+      <description>
+        <!-- Albistearen edukia edo laburpena -->
+        GameStop-en 2026ko Esports Tourrak sailkapen faseak izango ditu Ipar Amerikan,
+        Europan eta Asian. Txapelketako irabazle nagusiak 100.000 dolar baino gehiagoko
+        diru-saria jasoko du, eta finalistek hardware esklusiboa, GameStop produktuak
+        eta babesleen sari bereziak eskuratuko dituzte.
+      </description>
+      <pubDate>Sun, 25 Jan 2026 15:30:00 GMT</pubDate>
+      <!-- Argitalpen data -->
+    </item>
+
+    <item>
+      <!-- Hirugarren albistea -->
+      <title>GameStop-ek esports talde eta marka teknologikoekin elkarlana indartu du</title>
+      <!-- Albistearen izenburua -->
+      <link>https://aavilesf23-commits.github.io/weborria2/orriak/berria3.html</link>
+      <!-- Albistearen esteka -->
+      <description>
+        <!-- Albistearen azalpena -->
+        GameStop-ek esports talde ezagunekin eta marka teknologikoekin lankidetza
+        estrategikoak sinatu ditu 2026ko txapelketa indartzeko. Ekimen honi esker,
+        parte-hartzaileek entrenamendu saioak, joko-gune profesionalak, hitzaldiak,
+        streaming zuzenak eta gamer ospetsuekin topaketak izango dituzte.
+      </description>
+      <pubDate>Sun, 25 Jan 2026 12:00:00 GMT</pubDate>
+      <!-- Argitalpen data -->
+    </item>
+
+  </channel>
+  <!-- Kanalaren amaiera -->
+</rss>
+<!-- RSS dokumentuaren amaiera -->

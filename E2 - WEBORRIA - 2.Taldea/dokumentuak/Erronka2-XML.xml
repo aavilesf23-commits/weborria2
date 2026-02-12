@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<langileak> <!-- ERRO ELEMENTU NAGUSIA (LANGILEAK) -->
+    <bulegariak> <!-- BIGARREN MAILAKO ELEMENTUA (BULEGARIAK) -->
+        <bulegari id = "76"> <!-- HIRUGARREN MAILAKO ELEMENTUA (BULEGARI) -->
+            <!-- BULEGARI-REN ELEMENTU SINPLEAK -->
+            <izena>Jeremias</izena>
+            <abizena>Garcia</abizena>
+            <emaila>jeregarcia2@gmail.com</emaila>
+            <telefonoa>675838399</telefonoa>
+            <data>25/05/2020</data>
+            <!-- NAGUSI-REN ELEMENTU SINPLEAK -->
+            <nagusia id_nagusi = "34" >
+                <izena>Javier</izena>
+                <abizena>Caceres</abizena>
+            </nagusia>
+            <!-- LANPOSTU-REN ELEMENTU SINPLEAK -->
+            <lanpostu id_lanpostu = "1">
+                <deskribapena>Public Accountant</deskribapena>
+            </lanpostu>
+        </bulegari> 
+        <bulegari id = "25" > <!-- HIRUGARREN MAILAKO ELEMENTUA (BULEGARI) -->
+            <!-- BULEGARI-REN ELEMENTU SINPLEAK -->
+            <izena>Eustaquio</izena>
+            <abizena>Abichuela</abizena>
+            <emaila>eustabi@gmail.com</emaila>
+            <telefonoa>674569823</telefonoa>
+            <data></data>
+            <!-- LANPOSTU-ren ELEMENTU SINPLEAK -->
+            <lanpostu id_lanpostu = "2">
+                <izena></izena>
+            </lanpostu>
+        </bulegari>
+    </bulegariak>
+
+    <saltzaileak> <!-- BIGARREN MAILAKO ELEMENTUA (SALTAILEAK) -->
+        <saltzaile id = "205"> <!-- HIRUGARREN MAILAKO ELEMENTUA (SALTAILEA) -->
+            <!-- SALTAILE-REN ELEMENTU SINPLEAK -->
+            <izena>Andrea</izena>
+            <abizena>Moreno</abizena>
+            <emaila>andreamore63@gmail.com</emaila>
+            <telefonoa>693454598</telefonoa>
+            <data>26/09/2014</data>
+            <!-- NAGUSI-REN ELEMENTU SINPLEAK -->
+            <nagusia id_nagusi = "45">
+                <izena></izena>
+                <abizena></abizena>
+            </nagusia>
+            <!-- KONTAU-REN ELEMENTU SINPLEAK -->
+            <kontua>
+                <erabiltzailea>andreamo</erabiltzailea>
+                <pasahitza>andreaGS205</pasahitza>
+            </kontua>
+        </saltzaile>
+
+        <saltzaile id = "57"> <!-- HIRUGARREN MAILAKO ELEMENTUA (SALTAILEA) -->
+            <!-- SALTAILE-REN ELEMENTU SINPLEAK -->
+            <izena>Pedro</izena>
+            <abizena>Puerro</abizena>
+            <emaila>pedritop57@gmail.com</emaila>
+            <telefonoa>678439876</telefonoa>
+            <data>12/01/2012</data>
+            <!-- KONTUA-REN ELEMENTU SINPLEAK -->
+            <kontua>
+                <erabiltzailea>pedropuer</erabiltzailea>
+                <pasahitza>pedropuerGS57</pasahitza>
+            </kontua>
+        </saltzaile>
+    </saltzaileak>
+</langileak>

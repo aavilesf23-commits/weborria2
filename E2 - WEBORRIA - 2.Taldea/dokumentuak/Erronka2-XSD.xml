@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- LANGILEAK ELEMNTU -->
+    <xs:element name="langileak">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- BULEGARIA -->
+                <xs:element ref="bulegariak"/>
+                <xs:element ref="saltzaileak"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- LANGILE ESTRUKTURA -->
+    <xs:complexType name="TLangileEstruktura">
+        <xs:sequence>
+            <!-- Langile elementuak -->
+            <xs:element ref="izena"/>
+            <xs:element ref="abizena"/>
+            <xs:element ref="emaila"/>
+            <xs:element ref="telefonoa"/>
+            <xs:element ref="data"/>
+            <!-- Nagusiaren edukiera -->
+            <xs:choice>
+                <xs:element ref="nagusia"/>
+                <xs:element ref="nagusiEz"/>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="id" type="SimpleID" use="required"/>
+    </xs:complexType>
+
+    <!-- BULEGARIAK -->
+    <xs:complexType name="TBulegariak">
+        <xs:sequence>
+            <xs:element ref="bulegari" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- BULEGARI -->
+    <xs:complexType name="TBulegari">
+        <xs:complexContent>
+            <!-- LANGILE_ESTRUKTURA -->
+            <xs:extension base="TLangileEstruktura">
+                <xs:sequence>
+                <!-- LANPOSTU ELEMENTUA -->
+                    <xs:element ref="lanpostu"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- LANPOSTU -->
+    <xs:complexType name="TLanpostu">
+        <xs:sequence>
+            <xs:element ref="deskribapena"/>
+        </xs:sequence>
+        <xs:attribute name="id_lanpostu" type="SimpleID" use="required"/>
+    </xs:complexType>
+
+    <!-- SALTZAILEAK -->
+    <xs:complexType name="TSaltzaileak">
+        <xs:sequence>
+            <xs:element ref="saltzaile" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- SALTZAILE -->
+    <xs:complexType name="TSaltzaile">
+        <xs:complexContent>
+            <xs:extension base="TLangileEstruktura">
+                <xs:sequence>
+                    <xs:element ref="kontua"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- KONTUA -->
+    <xs:complexType name="TKontua">
+        <xs:sequence>
+            <xs:element ref="erabiltzailea"/>
+            <xs:element ref="pasahitza"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- NAGUSIA -->
+    <xs:complexType name="TNagusia">
+        <xs:sequence>
+            <xs:element ref="izena"/>
+            <xs:element ref="abizena"/>
+        </xs:sequence>
+        <xs:attribute name="id_nagusi" type="SimpleID" use="required"/>
+    </xs:complexType>
+
+
+    <!-- SIMPLE TYPES -->
+    <!-- SYMPLE TYPE EMAIL-A -->
+    <xs:simpleType name="SimpleTypeEmail">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE TELEFONOA -->
+    <xs:simpleType name="SimpleTypeTelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="((5|6)[0-9]{8}|011\.44\.[0-9]{4}\.[0-9]{6})"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE IZENA -->
+    <xs:simpleType name="SimpleIzena">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="255"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE ABIZENA -->
+    <xs:simpleType name="SimpleAbizena">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="255"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE DATA -->
+    <xs:simpleType name="SimpleDate">
+        <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE ID -->
+    <xs:simpleType name="SimpleID">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="99999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE DESKRIBAPENA -->
+    <xs:simpleType name="SimpleDeskribapena">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Public Accountant"/>
+            <xs:enumeration value="Accounting Manager"/>
+            <xs:enumeration value="Administration Assistant"/>
+            <xs:enumeration value="President"/>
+            <xs:enumeration value="Administration Vice President"/>
+            <xs:enumeration value="Accountant"/>
+            <xs:enumeration value="Finance Manager"/>
+            <xs:enumeration value="Human Resources Representative"/>
+            <xs:enumeration value="Programmer"/>
+            <xs:enumeration value="Marketing Manager"/>
+            <xs:enumeration value="Marketing Representative"/>
+            <xs:enumeration value="Public Relations Representative"/>
+            <xs:enumeration value="Purchasing Clerk"/>
+            <xs:enumeration value="Purchasing Manager"/>
+            <xs:enumeration value="Sales Manager"/>
+            <xs:enumeration value="Sales Representative"/>
+            <xs:enumeration value="Shipping Clerk"/>
+            <xs:enumeration value="Stock Clerk"/>
+            <xs:enumeration value="Stock Manager"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- SYMPLE TYPE PASAHITZA -->
+    <xs:simpleType name="SimplePasahitza">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- ELEMENTUAK -->
+    <xs:element name="izena" type="SimpleIzena"/>
+    <xs:element name="abizena" type="SimpleAbizena"/>
+    <xs:element name="emaila" type="SimpleTypeEmail"/>
+    <xs:element name="telefonoa" type="SimpleTypeTelefono"/>
+    <xs:element name="data" type="SimpleDate"/>
+
+    <xs:element name="nagusia" type="TNagusia"/>
+    <xs:element name="nagusiEz"/>
+
+    <xs:element name="bulegariak" type="TBulegariak"/>
+    <xs:element name="bulegari" type="TBulegari"/>
+
+    <xs:element name="lanpostu" type="TLanpostu"/>
+    <xs:element name="deskribapena" type="SimpleDeskribapena"/>
+
+    <xs:element name="saltzaileak" type="TSaltzaileak"/>
+    <xs:element name="saltzaile" type="TSaltzaile"/>
+
+    <xs:element name="kontua" type="TKontua"/>
+    <xs:element name="erabiltzailea" type="SimplePasahitza"/>
+    <xs:element name="pasahitza" type="SimplePasahitza"/>
+
+</xs:schema>
